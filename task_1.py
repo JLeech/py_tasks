@@ -151,6 +151,7 @@ def test_all():
 			print("SnpStorage.count_doubles_rs implemented wrong")
 
 		# как выбирать из store снипы в порядке сортировки по pval?
+		# нужно что-то сделать над store, а не над массивом pval
 		if ([ snp.pval for snp in store] == [0.02, 0.02, 0.04, 0.04]):
 			print("Well done!")
 		else:
